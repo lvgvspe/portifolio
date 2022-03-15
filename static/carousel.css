@@ -111,3 +111,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.rounded-circle {
+  object-fit: cover;
+}
