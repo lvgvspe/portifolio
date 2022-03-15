@@ -93,3 +93,9 @@ body {
 .carousel-img {
   object-fit: cover;
 }
+
+.carousel-portrait {
+  background-image: url("portrait.jpg");
+  background-position: center;
+  background-size: cover;
+}
