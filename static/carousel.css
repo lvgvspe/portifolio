@@ -99,3 +99,15 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.carousel-event {
+  background-image: url("event.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-art {
+  background-image: url("art.jpg");
+  background-position: center;
+  background-size: cover;
+}
