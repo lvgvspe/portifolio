@@ -1,10 +1,15 @@
-{% extends 'base.html' %}
-{% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='cover.css') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
-{% endblock %}
-{% block title %}Início{% endblock %}
-{% block body %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='cover.css') }}">
+    <title>LVGVS Photos</title>
+</head>
+<body>
 <div class="cover d-flex h-100 text-center text-white bg-dark">
     
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -13,8 +18,8 @@
           <h3 class="float-md-start mb-0">LVGVS Photos</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link active" aria-current="page" href="#">Início</a>
-            <a class="nav-link" href="#">Galeria</a>
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#galeria">Galeria</a>
+            <a class="nav-link" href="#contato">Contato</a>
           </nav>
         </div>
       </header>
@@ -23,7 +28,7 @@
         <h1>LVGVS Photos</h1>
         <p class="lead">Eu sou o Lucas; engenheiro ambiental, web dev, guitarrista, escritor e fotógrafo. <br>Fiz esse site para mostrar um pouco desse meu trabalho.</p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Veja mais</a>
+          <a href="#myCarousel" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Veja mais</a>
         </p>
       </main>
     
@@ -32,8 +37,7 @@
       </footer>
     </div>
     
-    
-       <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script> 
+     
 </div>
 <main>
 
@@ -51,7 +55,6 @@
             <div class="carousel-caption text-start">
               <h1>Retratos</h1>
               <p>A melhor maneira de promover sua imagem pessoal.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Veja mais</a></p>
             </div>
           </div>
         </div>
@@ -62,7 +65,6 @@
             <div class="carousel-caption">
               <h1>Eventos</h1>
               <p>Para eternizar suas experiências.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Veja mais</a></p>
             </div>
           </div>
         </div>
@@ -73,7 +75,7 @@
             <div class="carousel-caption text-end">
               <h1>Fotografia e arte</h1>
               <p>Transforme momentos em verdadeiras obras-de-arte.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Veja a galeria</a></p>
+              <p><a class="btn btn-lg btn-secondary fw-bold border-white bg-white" href="#galeria">Veja a galeria</a></p>
             </div>
           </div>
         </div>
@@ -124,14 +126,19 @@
       <!-- START THE FEATURETTES -->
   
       <hr class="featurette-divider">
+      <h1 id="galeria" class="text-center">Galeria</h1>
+      <br>
+      <br>
   
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          <h2 class="featurette-heading">Álbum <span class="text-muted">"Retratos".</span></h2>
+          <p class="lead">Veja aqui uma seleção dos retratos que já fotografei.</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/lucas-camargo/albums/72157720259807250" title="Portraits">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://live.staticflickr.com/65535/51725054447_c36d992c16_h.jpg" width="400" height="267" alt="Portraits">
+            </a>
   
         </div>
       </div>
@@ -140,12 +147,13 @@
   
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          <h2 class="featurette-heading">Álbum <span class="text-muted">"Ana".</span></h2>
+          <p class="lead">Veja os retratos da Ana, feitos bem despojadamente durante uma caminhada noturna pela cidade. Foi uma experiência muito divertida.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
+          <a data-flickr-embed="true" href="https://www.flickr.com/photos/lucas-camargo/albums/72177720296505325" title="Ana">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://live.staticflickr.com/65535/51865675361_895bf41ef8_h.jpg" width="400" height="400" alt="Ana">
+          </a>
         </div>
       </div>
   
@@ -153,12 +161,13 @@
   
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+          <h2 class="featurette-heading">Álbum <span class="text-muted">"Chapada 2021".</span></h2>
+          <p class="lead">Fotos feitas durante uma viagem para a Chapada dos Veadeiros, em 2021.</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
+          <a data-flickr-embed="true" href="https://www.flickr.com/photos/lucas-camargo/albums/72157720259759105" title="Chapada 2021">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://live.staticflickr.com/65535/51725053672_a6e96755f0_h.jpg" width="400" height="400" alt="Chapada 2021">
+          </a>
         </div>
       </div>
   
@@ -167,13 +176,26 @@
       <!-- /END THE FEATURETTES -->
   
     </div><!-- /.container -->
+
+    <!-- /PÁGINA DE CONTATO -->
+
+    <div class="container">
+      <h1 id="contato" class="text-center">Contato</h1>
+      <br>
+      <br>
+      
+    </div>
   
   
     <!-- FOOTER -->
     <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; LVGVS Photos - Todos os direitos reservados. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <button type="button" class="float-end btn btn-secondary fw-bold border-gray bg-gray"><a class="text-white text-decoration-none" href="#">Volte ao topo</a></button>
+      <p>&copy; LVGVS Photos - Todos os direitos reservados. &middot; <a class="link-secondary" href="#">Privacy</a> &middot; <a class="link-secondary" href="#">Terms</a></p>
     </footer>
     <br>
   </main>
-{% endblock %}
+  <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+</body>
+</html>
