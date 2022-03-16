@@ -181,16 +181,37 @@
 
     <div class="container">
       <h1 id="contato" class="text-center">Contato</h1>
-      <br>
-      <br>
-      
+      <div class="row">
+        <div class="col-lg-7">
+          <form method="post">
+            <label class="lead" for="nome">Seu nome</label><br>
+            <input class="large" id="nome" name="name" type="text" placeholder="Nome"><br>
+            <label class="lead"for="tel">Seu telefone</label><br>
+            <input class="large" id="tel" name="tel" type="text" placeholder="(xx) 9xxxx-xxxx"><br>
+            <label class="lead" for="email">Seu E-mail</label><br>
+            <input class="large" id="email" name="email" type="text" placeholder="nome@domínio.com"><br>
+            <label class="lead" for="msg">Seu nome</label><br>
+            <textarea class="large" rows="5" id="msg" name="msg" type="text" placeholder="Mensagem"></textarea>
+            <button type="submit" class="float-end btn btn-secondary fw-bold border-gray bg-gray text-white text-decoration-none">Enviar</button>
+
+          </form>
+        </div>
+        <div class="col-md-5 contato">
+          <span>
+            <p class="lead text-end">E-mail: <a class="link-secondary" href="mailto:lucas-camargo@outlook.com">lucas-camargo@outlook.com</a></p>
+            <p class="lead text-end">Telefone: <a class="link-secondary" href="tel:+5562993503724">(62) 9 9350-3724</a></p>
+            <p class="lead text-end">Instagram: <a class="link-secondary" href="https://instagram.com/lvgvspe">@lvgvspe</a></p>
+          </span>
+        </div>
+      </div>
     </div>
   
-  
+    <br>
+    <br>
     <!-- FOOTER -->
     <footer class="container">
       <button type="button" class="float-end btn btn-secondary fw-bold border-gray bg-gray"><a class="text-white text-decoration-none" href="#">Volte ao topo</a></button>
-      <p>&copy; LVGVS Photos - Todos os direitos reservados. &middot; <a class="link-secondary" href="#">Privacy</a> &middot; <a class="link-secondary" href="#">Terms</a></p>
+      <p>&copy; LVGVS Photos - Todos os direitos reservados. | Site feito por <a class="link-secondary" href="https://github.com/lvgvspe">LVGVSPE</a></p>
     </footer>
     <br>
   </main>

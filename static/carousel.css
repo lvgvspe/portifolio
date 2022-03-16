@@ -116,3 +116,7 @@ body {
 .rounded-circle {
   object-fit: cover;
 }
+
+.large {
+  width: 100%;
+}
