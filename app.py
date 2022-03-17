@@ -7,7 +7,7 @@ app = Flask(__name__)
 def inicio():
     if request.method == 'POST':
         name = request.form['name']
-        phone = request.form['phone']
+        tel = request.form['tel']
         email = request.form['email']
         msg = request.form['msg']
 
@@ -18,7 +18,7 @@ def inicio():
         chave = "hloqihtnohnsiycb"
         message = f"""\
 Subject: MENSAGEM DO SITE
-{name}, {phone}, {email}
+{name}, {tel}, {email}
 {msg} ."""
 
         context = ssl.create_default_context()
