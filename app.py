@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect, url_for, render_template
 import smtplib, ssl
+import os
 
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ def home():
         smtp_server = "smtp.gmail.com"
         sender_email = "video181881@gmail.com"
         receiver_email = "lucas-camargo@outlook.com"
-        key = f"{os.getenv("MAIL_KEY")}"
+        key = f"{os.getenv('MAIL_KEY')}"
         message = f"""\
 Subject: MENSAGEM DO SITE
 {name}, {tel}, {email}
