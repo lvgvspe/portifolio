@@ -15,7 +15,7 @@ def inicio():
         smtp_server = "smtp.gmail.com"
         sender_email = "video181881@gmail.com"
         receiver_email = "lucas-camargo@outlook.com"
-        chave = "hloqihtnohnsiycb"
+        chave = f"{os.getenv("MAIL_KEY")}"
         message = f"""\
 Subject: MENSAGEM DO SITE
 {name}, {tel}, {email}
